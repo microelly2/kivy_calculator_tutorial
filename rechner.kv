@@ -1,6 +1,24 @@
 
 BoxLayout:
+	orientation: "vertical"
 	Label:
 		text: "Hallo"
-	Button:
-		text: "Berechne!"
+	GridLayout:
+		cols: 2
+		Button:
+			text: "1"
+		Button: 
+			text: "2"
+		Button:
+			text: "7"
+		Button: 
+			text: "9"
+
+	BoxLayout:
+		Button:
+			text: "+"
+		Button:
+			text: "-"
+		Button:
+			text: "Berechne!"
+			on_release: app.berechne(self,root,app)
