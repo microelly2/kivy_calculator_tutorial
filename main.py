@@ -1,6 +1,10 @@
 from kivy.app import App
 
-meineAnwendung=App()
+
+class RechnerApp(App):
+	pass
+
+meineAnwendung=RechnerApp()
 print(meineAnwendung)
 meineAnwendung.run()
 
