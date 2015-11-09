@@ -19,9 +19,21 @@ Teil 3
 Das Layout ändern
 Vertikale Anordnung, Grid Layout, Kombination von Layouts
 
-
-
-Programmieren einer Taschenrechner-App mit kivy 
 Teil 4
+Objekte der Oberfläche über ihre id ansprechen
+Objekte einer Klasse einheitlich vorkonfigurieren
+
+
+
+
+
+Programmieren einer Taschenrechner-App mit kivy  Teil 5
+
+Klassen für verschiedene Buttons definieren
+
+
+
+
+
 
 

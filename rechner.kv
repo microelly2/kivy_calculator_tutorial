@@ -1,24 +1,37 @@
 
+<Ziffernknopf@Button>:
+	on_press: app.button_pressed(self)
+	background_color: (0,1,1,1)
+
+<Operationsknopf@Button>:
+	on_press: app.button_pressed(self)
+	background_color: (0,0,1,1)
+
+
 BoxLayout:
 	orientation: "vertical"
 	Label:
+		id: outputLabel
 		text: "Hallo"
 	GridLayout:
 		cols: 2
-		Button:
+		Ziffernknopf:
 			text: "1"
 		Button: 
 			text: "2"
-		Button:
+		Ziffernknopf:
 			text: "7"
-		Button: 
+		Ziffernknopf: 
 			text: "9"
 
 	BoxLayout:
-		Button:
+		Operationsknopf:
 			text: "+"
 		Button:
 			text: "-"
 		Button:
+			text: "Reset"
+			on_release: app.reset()
+		Button:
 			text: "Berechne!"
-			on_release: app.berechne(self,root,app)
+			on_release: app.berechne2()
