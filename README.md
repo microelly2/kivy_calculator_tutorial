@@ -26,15 +26,21 @@ Objekte einer Klasse einheitlich vorkonfigurieren
 Teil 5
 Klassen für verschiedene Buttons definieren
 
-
-
-
-
-
-
-Programmieren einer Taschenrechner-App mit kivy  -- Teil 6
-
+Teil 6
 Auswechselbare Oberflächen mit dem Screen Manager
+
+
+
+
+
+
+Programmieren einer Taschenrechner-App mit kivy  --  Teil 7
+
+Einbinden eines Moduls aus dem kivy garden:
+https://github.com/kivy-garden/garden.graph
+
+Darstellung von Funktionsgraphen
+
 
 
 
