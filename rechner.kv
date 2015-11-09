@@ -1,3 +1,9 @@
+<Label>:
+	color: (1,0,0,1)
+	font_size: 30
+
+<Button>:
+	color: (1,1,0,1)
 
 <Ziffernknopf@Button>:
 	on_press: app.button_pressed(self)
@@ -7,31 +13,49 @@
 	on_press: app.button_pressed(self)
 	background_color: (0,0,1,1)
 
+ScreenManager:
+	
+	Screen:
+		name: 'calc'
+		BoxLayout:
+			orientation: "vertical"
+			Label:
+				id: outputLabel
+				text: "Hallo"
+			GridLayout:
+				cols: 2
+				Ziffernknopf:
+					text: "1"
+				Button: 
+					text: "2"
+				Ziffernknopf:
+					text: "7"
+				Ziffernknopf: 
+					text: "9"
 
-BoxLayout:
-	orientation: "vertical"
-	Label:
-		id: outputLabel
-		text: "Hallo"
-	GridLayout:
-		cols: 2
-		Ziffernknopf:
-			text: "1"
-		Button: 
-			text: "2"
-		Ziffernknopf:
-			text: "7"
-		Ziffernknopf: 
-			text: "9"
+			BoxLayout:
+				Operationsknopf:
+					text: "+"
+				Button:
+					text: "-"
+				Button:
+					text: "Reset"
+					on_release: app.reset()
+				Button:
+					text: "Berechne!"
+					on_release: app.berechne2()
+				Button:
+					text: 'Grafik'
+					on_press: root.current =  'graph'
 
-	BoxLayout:
-		Operationsknopf:
-			text: "+"
-		Button:
-			text: "-"
-		Button:
-			text: "Reset"
-			on_release: app.reset()
-		Button:
-			text: "Berechne!"
-			on_release: app.berechne2()
+	Screen:
+		name: 'graph'
+		BoxLayout:
+			orientation: "vertical"
+			Button:
+				text: 'Kalkulator'
+				on_press: root.current =  'calc'
+			Button:
+				text: 'Grafik anzeigen'
+
+

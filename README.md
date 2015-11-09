@@ -23,13 +23,21 @@ Teil 4
 Objekte der Oberfläche über ihre id ansprechen
 Objekte einer Klasse einheitlich vorkonfigurieren
 
-
-
-
-
-Programmieren einer Taschenrechner-App mit kivy  Teil 5
-
+Teil 5
 Klassen für verschiedene Buttons definieren
+
+
+
+
+
+
+
+Programmieren einer Taschenrechner-App mit kivy  -- Teil 6
+
+Auswechselbare Oberflächen mit dem Screen Manager
+
+
+
 
 
 
