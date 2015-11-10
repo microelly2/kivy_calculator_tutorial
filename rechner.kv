@@ -1,3 +1,5 @@
+#:import WipeTransition kivy.uix.screenmanager.WipeTransition
+
 <Label>:
 	color: (1,0,0,1)
 	font_size: 30
@@ -14,6 +16,7 @@
 	background_color: (0,0,1,1)
 
 ScreenManager:
+	transition: WipeTransition()
 	
 	Screen:
 		name: 'calc'
@@ -23,11 +26,21 @@ ScreenManager:
 				id: outputLabel
 				text: "Hallo"
 			GridLayout:
-				cols: 2
+				size_hint_y: 3
+				cols: 3
 				Ziffernknopf:
 					text: "1"
 				Button: 
 					text: "2"
+				Ziffernknopf:
+					text: "3"
+				Ziffernknopf:
+					text: "4"
+				Ziffernknopf:
+					text: "5"
+				Ziffernknopf:
+					text: "6"
+
 				Ziffernknopf:
 					text: "7"
 				Ziffernknopf: 
@@ -51,12 +64,20 @@ ScreenManager:
 	Screen:
 		name: 'graph'
 		BoxLayout:
+			
 			orientation: "vertical"
-			Button:
-				text: 'Kalkulator'
-				on_press: root.current =  'calc'
-			Button:
-				text: 'Grafik anzeigen'
-				on_press: app.gengraph(self)
+			BoxLayout:
+				size_hint_y: 4
+				id: graph
+			BoxLayout:
+				Button:
+					text: 'Sinus'
+					on_press: app.gengraph(self,1)
+				Button:
+					text: 'Linear'
+					on_press: app.gengraph(self,2)
+				Button:
+					text: 'Kalkulator'
+					on_press: root.current =  'calc'
 
 
