@@ -1,0 +1,29 @@
+# -*- coding: utf8 -*-
+
+<Label>:
+	color: (0,1,1,1)
+	font_size: 30
+
+<TextInput>:
+	color: (0,1,0,1)
+	font_size: 50
+
+<Button>:
+	color: (1,1,0,1)
+
+
+BoxLayout:
+	label: loglab
+	textbox: input
+	orientation:  'vertical'
+	Label:
+		id: loglab
+		text: "** Mein Client **\n"
+		size_hint_y: 4
+	TextInput:
+		id: input
+		text: '3*4'
+	Button:
+		text: 'Senden'
+		on_release: app.sende_frage()
+
